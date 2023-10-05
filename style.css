@@ -35,16 +35,32 @@
     color: rgb(19, 189, 61);
 }
 
+.form-control {
+    margin-bottom: 6px;
+}
 
-@media (max-width: 767px) {
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 66%;
+    max-width: 66%;
+}
+
+@media (max-width: 991px) {
     .col-6 {
-        -ms-flex: 0 0 100%;
+        -ms-flex: 0 0 50%;
         flex: 0 0 100%;
         max-width: 100%;
     }
-    
+}
+
+@media (max-width: 767px) {
     .h2, h2 {
         font-size: 1.5rem;
+    }
+    
+    .col {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
